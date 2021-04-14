@@ -17,6 +17,10 @@
 packages:
   all:
     compiler: [clang]
+    providers:
+      mpi: [openmpi]
+      blas: [openblas]
+
 
 #  cmake:
 #    version: [3.17.2]
