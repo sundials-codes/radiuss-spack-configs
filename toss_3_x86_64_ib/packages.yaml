@@ -153,6 +153,12 @@ packages:
     - spec: graphviz
       prefix: /usr
 
+  gmp:
+    buildable: false
+    externals:
+    - spec: gmp
+      prefix: /usr
+
   libtool:
     buildable: false
     externals:
@@ -168,6 +174,12 @@ packages:
     buildable: false
     externals:
     - spec: m4
+      prefix: /usr
+
+  mpfr:
+    buildable: false
+    externals:
+    - spec: mpfr
       prefix: /usr
 
   perl:
