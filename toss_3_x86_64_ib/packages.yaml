@@ -121,3 +121,87 @@ packages:
     externals:
     - spec: python@3.8.2
       prefix: /usr/tce/packages/python/python-3.8.2
+
+  # System level packages to not build
+  autoconf:
+    buildable: false
+    externals:
+    - spec: autoconf
+      prefix: /usr
+
+  automake:
+    buildable: false
+    externals:
+    - spec: automake
+      prefix: /usr
+
+  bzip2:
+    buildable: false
+    externals:
+    - spec: bzip2
+      prefix: /usr
+
+  gettext:
+    buildable: false
+    externals:
+    - spec: gettext
+      prefix: /usr
+
+  graphviz:
+    buildable: false
+    externals:
+    - spec: graphviz
+      prefix: /usr
+
+  libtool:
+    buildable: false
+    externals:
+    - spec: libtool
+      prefix: /usr
+
+  libx11:
+    buildable: false
+    externals:
+    - spec: libx11
+      prefix: /usr
+  m4:
+    buildable: false
+    externals:
+    - spec: m4
+      prefix: /usr
+
+  perl:
+    buildable: false
+    externals:
+    - spec: perl
+      prefix: /usr
+
+  pkg-config:
+    buildable: false
+    externals:
+    - spec: pkg-config
+      prefix: /usr
+
+  tar:
+    buildable: false
+    externals:
+    - spec: tar
+      prefix: /usr
+
+  readline:
+    buildable: false
+    externals:
+    - spec: readline
+      prefix: /usr
+
+  unzip:
+    buildable: false
+    externals:
+    - spec: unzip
+      prefix: /usr
+
+  zlib:
+    buildable: false
+    externals:
+    - spec: zlib
+      prefix: /usr
