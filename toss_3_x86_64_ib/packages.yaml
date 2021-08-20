@@ -21,46 +21,56 @@ packages:
       prefix: /usr/tce/packages/cuda/cuda-11.1.0
 
   hip:
-    version: [4.0.0, 4.1.0]
+    version: [4.0.0, 4.1.0, 4.2.0]
     buildable: false
     externals:
     - spec: hip@4.0.0
       prefix: /opt/rocm-4.0.0/hip
     - spec: hip@4.1.0
       prefix: /opt/rocm-4.1.0/hip
+    - spec: hip@4.2.0
+      prefix: /opt/rocm-4.2.0/hip
   llvm-amdgpu:
-    version: [4.0.0, 4.1.0]
+    version: [4.0.0, 4.1.0, 4.2.0]
     buildable: false
     externals:
     - spec: llvm-amdgpu@4.0.0
       prefix: /opt/rocm-4.0.0/llvm
     - spec: llvm-amdgpu@4.1.0
       prefix: /opt/rocm-4.1.0/llvm
+    - spec: llvm-amdgpu@4.2.0
+      prefix: /opt/rocm-4.2.0/llvm
   hsa-rocr-dev:
-    version: [4.0.0, 4.1.0]
+    version: [4.0.0, 4.1.0, 4.2.0]
     buildable: false
     externals:
     - spec: hsa-rocr-dev@4.0.0
       prefix: /opt/rocm-4.0.0/
     - spec: hsa-rocr-dev@4.1.0
       prefix: /opt/rocm-4.1.0/
+    - spec: hsa-rocr-dev@4.2.0
+      prefix: /opt/rocm-4.2.0/
   rocminfo:
-    version: [4.0.0, 4.1.0]
+    version: [4.0.0, 4.1.0, 4.2.0]
     buildable: false
     externals:
     - spec: rocminfo@4.0.0
       prefix: /opt/rocm-4.0.0/
     - spec: rocminfo@4.1.0
       prefix: /opt/rocm-4.1.0/
+    - spec: rocminfo@4.2.0
+      prefix: /opt/rocm-4.2.0/
   rocm-device-libs:
-    version: [4.0.0, 4.1.0]
+    version: [4.0.0, 4.1.0, 4.2.0]
     buildable: false
     externals:
     - spec: rocm-device-libs@4.0.0
       prefix: /opt/rocm-4.0.0/
     - spec: rocm-device-libs@4.1.0
       prefix: /opt/rocm-4.1.0/
-
+    - spec: rocm-device-libs@4.2.0
+      prefix: /opt/rocm-4.2.0/
+  
   # Lock down which MPI we are using
   mpi:
     buildable: false
