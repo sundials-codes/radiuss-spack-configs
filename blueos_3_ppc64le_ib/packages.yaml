@@ -24,15 +24,15 @@ packages:
     externals:
     - spec: cuda@11.2.0
       prefix: /usr/tce/packages/cuda/cuda-11.2.0
-    - spec: cuda@11.0.2~allow-unsupported-compilers
+    - spec: cuda@11.0.2
       prefix: /usr/tce/packages/cuda/cuda-11.0.2
-    - spec: cuda@10.1.243~allow-unsupported-compilers
+    - spec: cuda@10.1.243
       prefix: /usr/tce/packages/cuda/cuda-10.1.243
-    - spec: cuda@10.1.168+allow-unsupported-compilers
+    - spec: cuda@10.1.168
       prefix: /usr/tce/packages/cuda/cuda-10.1.168
-    - spec: cuda@9.2.148~allow-unsupported-compilers
+    - spec: cuda@9.2.148
       prefix: /usr/tce/packages/cuda/cuda-9.2.148
-    - spec: cuda@8.0~allow-unsupported-compilers
+    - spec: cuda@8.0
       prefix: /usr/tce/packages/cuda/cuda-8.0
 
   # Lock down which MPI we are using
