@@ -8,6 +8,7 @@ packages:
       blas: [netlib-lapack]
       lapack: [netlib-lapack]
       mpi: [mvapich2]
+      unwind: [libunwind]
 
   cuda:
     version: [10.1.168, 10.2.89, 11.1.0]
@@ -70,7 +71,7 @@ packages:
       prefix: /opt/rocm-4.1.0/
     - spec: rocm-device-libs@4.2.0
       prefix: /opt/rocm-4.2.0/
-  
+
   # Lock down which MPI we are using
   mpi:
     buildable: false
