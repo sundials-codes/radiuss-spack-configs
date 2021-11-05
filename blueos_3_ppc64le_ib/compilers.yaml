@@ -57,7 +57,7 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
-    spec: clang@9.0.0ibm
+    spec: clang@9.0.0-ibm
     paths:
       cc: /usr/tce/packages/clang/clang-ibm-2019.10.03/bin/clang
       cxx: /usr/tce/packages/clang/clang-ibm-2019.10.03/bin/clang++
@@ -70,8 +70,7 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
-    # clang/10.0.0
-    spec: clang@10.0.0
+    spec: clang@10.0.1-ibm
     paths:
       cc: /usr/tce/packages/clang/clang-10.0.0/bin/clang
       cxx: /usr/tce/packages/clang/clang-10.0.0/bin/clang++
@@ -84,7 +83,7 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
-    spec: clang@11.0.0ibm
+    spec: clang@11.0.0-ibm
     paths:
       cc: /usr/tce/packages/clang/clang-ibm-11.0.0/bin/clang
       cxx: /usr/tce/packages/clang/clang-ibm-11.0.0/bin/clang++
