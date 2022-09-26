@@ -10,34 +10,32 @@ packages:
   mpi:
     buildable: false
   cmake:
+    version: [3.18.0, 3.20.2, 3.14.5]
     buildable: false
-    version: [3.12.1, 3.14.5, 3.16.8, 3.18.0, 3.20.2]
     externals:
-    - spec: cmake@3.12.1
-      prefix: /usr/tce/packages/cmake/cmake-3.12.1
     - spec: cmake@3.14.5
       prefix: /usr/tce/packages/cmake/cmake-3.14.5
-    - spec: cmake@3.16.8
-      prefix: /usr/tce/packages/cmake/cmake-3.16.8
     - spec: cmake@3.18.0
       prefix: /usr/tce/packages/cmake/cmake-3.18.0
     - spec: cmake@3.20.2
       prefix: /usr/tce/packages/cmake/cmake-3.20.2
   cuda:
+    version: [11.5.0, 11.0.2, 10.2.89, 10.1.243, 10.1.168, 9.2.148, 8.0]
     buildable: false
-    version: [9.0.184, 9.1.85, 9.2.148, 10.1.243, 10.2.89, 11.0.2, 11.1.1, 11.2.0]
     externals:
-    - spec: cuda@11.2.0
-      prefix: /usr/tce/packages/cuda/cuda-11.2.0
-    - spec: cuda@11.0.2
+    - spec: cuda@11.5.0~allow-unsupported-compilers
+      prefix: /usr/tce/packages/cuda/cuda-11.5.0
+    - spec: cuda@11.0.2~allow-unsupported-compilers
       prefix: /usr/tce/packages/cuda/cuda-11.0.2
-    - spec: cuda@10.1.243
+    - spec: cuda@10.2.89~allow-unsupported-compilers
+      prefix: /usr/tce/packages/cuda/cuda-10.2.89
+    - spec: cuda@10.1.243~allow-unsupported-compilers
       prefix: /usr/tce/packages/cuda/cuda-10.1.243
-    - spec: cuda@10.1.168
+    - spec: cuda@10.1.168~allow-unsupported-compilers
       prefix: /usr/tce/packages/cuda/cuda-10.1.168
-    - spec: cuda@9.2.148
+    - spec: cuda@9.2.148~allow-unsupported-compilers
       prefix: /usr/tce/packages/cuda/cuda-9.2.148
-    - spec: cuda@8.0
+    - spec: cuda@8.0~allow-unsupported-compilers
       prefix: /usr/tce/packages/cuda/cuda-8.0
   spectrum-mpi:
     externals:
@@ -51,14 +49,17 @@ packages:
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-4.9.3
     - spec: spectrum-mpi@10.3.1.03rtm0%clang@9.0.0
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-clang-9.0.0
-    - spec: spectrum-mpi@10.3.1.03rtm0%clang@9.0.0-ibm
+    - spec: spectrum-mpi@10.3.1.03rtm0%clang@ibm.9.0.0
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-clang-ibm-2019.10.03
-    - spec: spectrum-mpi@10.3.1.03rtm0%clang@10.0.1-ibm
+    - spec: spectrum-mpi@10.3.1.03rtm0%clang@ibm.10.0.1
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-clang-ibm-10.0.1
     - spec: spectrum-mpi@10.3.1.03rtm0%xl@16.1.1.7
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-xl-2020.03.18
+    - spec: spectrum-mpi@10.3.1.03rtm0%xl@16.1.1.10
+      prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-xl-2021.09.22
     - spec: spectrum-mpi@10.3.1.03rtm0%xl@beta2019.06.20
       prefix: /usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-xl-beta-2019.06.20
+    buildable: false
   python:
     buildable: false
     version: [3.8.2]
