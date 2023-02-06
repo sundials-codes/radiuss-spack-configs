@@ -4,8 +4,8 @@ compilers:
     paths:
       cc: /usr/tcetmp/packages/clang/clang-3.9.1/bin/clang
       cxx: /usr/tcetmp/packages/clang/clang-3.9.1/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
       fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -17,8 +17,8 @@ compilers:
     paths:
       cc: /usr/tcetmp/packages/clang/clang-4.0.0/bin/clang
       cxx: /usr/tcetmp/packages/clang/clang-4.0.0/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
       fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -30,8 +30,21 @@ compilers:
     paths:
       cc: /usr/tce/packages/clang/clang-9.0.0/bin/clang
       cxx: /usr/tce/packages/clang/clang-9.0.0/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
-      fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      fc: /usr/tce/packages/xl/xl-2020.03.18/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2020.03.18/bin/xlf_r
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@10.0.1
+    paths:
+      cc: /usr/tce/packages/clang/clang-10.0.1/bin/clang
+      cxx: /usr/tce/packages/clang/clang-10.0.1/bin/clang++
+      fc: /usr/tce/packages/xl/xl-2020.09.17/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2020.09.17/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -43,8 +56,8 @@ compilers:
     paths:
       cc: /usr/tce/packages/clang/clang-11.0.0/bin/clang
       cxx: /usr/tce/packages/clang/clang-11.0.0/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
-      fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      fc: /usr/tce/packages/xl/xl-2020.11.12/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2020.11.12/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -56,8 +69,8 @@ compilers:
     paths:
       cc: /usr/tce/packages/clang/clang-12.0.1/bin/clang
       cxx: /usr/tce/packages/clang/clang-12.0.1/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
-      fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -69,8 +82,34 @@ compilers:
     paths:
       cc: /usr/tce/packages/clang/clang-13.0.1/bin/clang
       cxx: /usr/tce/packages/clang/clang-13.0.1/bin/clang++
-      f77: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
-      fc: /usr/tce/packages/xl/xl-beta-2019.06.20/bin/xlf2003_r
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@14.0.5
+    paths:
+      cc: /usr/tce/packages/clang/clang-14.0.5/bin/clang
+      cxx: /usr/tce/packages/clang/clang-14.0.5/bin/clang++
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@15.0.6
+    paths:
+      cc: /usr/tce/packages/clang/clang-15.0.6/bin/clang
+      cxx: /usr/tce/packages/clang/clang-15.0.6/bin/clang++
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -143,6 +182,32 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
+    spec: clang@ibm.14.0.5
+    paths:
+      cc: /usr/tce/packages/clang/clang-ibm-14.0.5/bin/clang
+      cxx: /usr/tce/packages/clang/clang-ibm-14.0.5/bin/clang++
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: clang@ibm.15.0.6
+    paths:
+      cc: /usr/tce/packages/clang/clang-ibm-15.0.6/bin/clang
+      cxx: /usr/tce/packages/clang/clang-ibm-15.0.6/bin/clang++
+      fc: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf2003_r
+      f77: /usr/tce/packages/xl/xl-2021.09.22/bin/xlf_r
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
     spec: clang@coral2018.08.08
     paths:
       cc: /usr/tce/packages/clang/clang-coral-2018.08.08/bin/clang
@@ -169,12 +234,12 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
-    spec: gcc@8.3.1
+    spec: gcc@default
     paths:
-      cc: /usr/tce/packages/gcc/gcc-8.3.1/bin/gcc
-      cxx: /usr/tce/packages/gcc/gcc-8.3.1/bin/g++
-      f77: /usr/tce/packages/gcc/gcc-8.3.1/bin/gfortran
-      fc: /usr/tce/packages/gcc/gcc-8.3.1/bin/gfortran
+      cc: gcc
+      cxx: g++
+      f77: gfortran
+      fc: gfortran
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -195,12 +260,12 @@ compilers:
     environment: {}
     extra_rpaths: []
 - compiler:
-    spec: gcc@default
+    spec: gcc@8.3.1
     paths:
-      cc: gcc
-      cxx: g++
-      f77: gfortran
-      fc: gfortran
+      cc: /usr/tce/packages/gcc/gcc-8.3.1/bin/gcc
+      cxx: /usr/tce/packages/gcc/gcc-8.3.1/bin/g++
+      f77: /usr/tce/packages/gcc/gcc-8.3.1/bin/gfortran
+      fc: /usr/tce/packages/gcc/gcc-8.3.1/bin/gfortran
     flags: {}
     operating_system: rhel7
     target: ppc64le
@@ -305,6 +370,32 @@ compilers:
       cxx: /usr/tce/packages/pgi/pgi-20.4/bin/pgc++
       f77: /usr/tce/packages/pgi/pgi-20.4/bin/pgfortran
       fc: /usr/tce/packages/pgi/pgi-20.4/bin/pgf90
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: pgi@21.11
+    paths:
+      cc: /usr/tce/packages/pgi/pgi-21.11/bin/pgcc
+      cxx: /usr/tce/packages/pgi/pgi-21.11/bin/pgc++
+      f77: /usr/tce/packages/pgi/pgi-21.11/bin/pgfortran
+      fc: /usr/tce/packages/pgi/pgi-21.11/bin/pgf90
+    flags: {}
+    operating_system: rhel7
+    target: ppc64le
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: pgi@22.11
+    paths:
+      cc: /usr/tce/packages/pgi/pgi-22.11/bin/pgcc
+      cxx: /usr/tce/packages/pgi/pgi-22.11/bin/pgc++
+      f77: /usr/tce/packages/pgi/pgi-22.11/bin/pgfortran
+      fc: /usr/tce/packages/pgi/pgi-22.11/bin/pgf90
     flags: {}
     operating_system: rhel7
     target: ppc64le
