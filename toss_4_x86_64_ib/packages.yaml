@@ -24,6 +24,22 @@ packages::
     externals:
     - spec: cuda@10.1.168
       prefix: /usr/tce/packages/cuda/cuda-10.1.168
+  hsa:
+    version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
+    buildable: false
+    externals:
+    - spec: hsa@4.3.1
+      prefix: /opt/rocm-4.3.1/
+    - spec: hsa@4.5.2
+      prefix: /opt/rocm-4.5.2/
+    - spec: hsa@5.0.2
+      prefix: /opt/rocm-5.0.2/
+    - spec: hsa@5.1.1
+      prefix: /opt/rocm-5.1.1/
+    - spec: hsa@5.2.3
+      prefix: /opt/rocm-5.2.3/
+    - spec: hsa@5.4.1
+      prefix: /opt/rocm-5.4.1/
   hip:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
     buildable: false
@@ -44,17 +60,17 @@ packages::
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
     buildable: false
     externals:
-    - spec: hip@4.3.1
+    - spec: hipblas@4.3.1
       prefix: /opt/rocm-4.3.1/
-    - spec: hip@4.5.2
+    - spec: hipblas@4.5.2
       prefix: /opt/rocm-4.5.2/
-    - spec: hip@5.0.2
+    - spec: hipblas@5.0.2
       prefix: /opt/rocm-5.0.2/
-    - spec: hip@5.1.1
+    - spec: hipblas@5.1.1
       prefix: /opt/rocm-5.1.1/
-    - spec: hip@5.2.3
+    - spec: hipblas@5.2.3
       prefix: /opt/rocm-5.2.3/
-    - spec: hip@5.4.1
+    - spec: hipblas@5.4.1
       prefix: /opt/rocm-5.4.1/
   hipsparse:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
@@ -136,6 +152,22 @@ packages::
       prefix: /opt/rocm-5.2.3/
     - spec: rocm-device-libs@5.4.1
       prefix: /opt/rocm-5.4.1/
+  rocrand:
+    version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
+    buildable: false
+    externals:
+    - spec: rocrand@4.3.1
+      prefix: /opt/rocm-4.3.1/
+    - spec: rocrand@4.5.2
+      prefix: /opt/rocm-4.5.2/
+    - spec: rocrand@5.0.2
+      prefix: /opt/rocm-5.0.2/
+    - spec: rocrand@5.1.1
+      prefix: /opt/rocm-5.1.1/
+    - spec: rocrand@5.2.3
+      prefix: /opt/rocm-5.2.3/
+    - spec: rocrand@5.4.1
+      prefix: /opt/rocm-5.4.1/
   rocprim:
     version: [5.1.1, 5.2.3, 5.4.1]
     buildable: false
@@ -145,6 +177,22 @@ packages::
     - spec: rocprim@5.2.3
       prefix: /opt/rocm-5.2.3/
     - spec: rocprim@5.4.1
+      prefix: /opt/rocm-5.4.1/
+  rocthrust:
+    version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1]
+    buildable: false
+    externals:
+    - spec: rocthrust@4.3.1
+      prefix: /opt/rocm-4.3.1/
+    - spec: rocthrust@4.5.2
+      prefix: /opt/rocm-4.5.2/
+    - spec: rocthrust@5.0.2
+      prefix: /opt/rocm-5.0.2/
+    - spec: rocthrust@5.1.1
+      prefix: /opt/rocm-5.1.1/
+    - spec: rocthrust@5.2.3
+      prefix: /opt/rocm-5.2.3/
+    - spec: rocthrust@5.4.1
       prefix: /opt/rocm-5.4.1/
   mvapich2:
     externals:
