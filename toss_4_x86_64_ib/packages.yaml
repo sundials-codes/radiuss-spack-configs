@@ -47,15 +47,15 @@ packages::
     buildable: false
     externals:
     - spec: hip@5.0.2
-      prefix: /opt/rocm-5.0.2/hip
+      modules: [rocm/5.0.2]
     - spec: hip@5.1.1
-      prefix: /opt/rocm-5.1.1/hip
+      modules: [rocm/5.1.1]
     - spec: hip@5.2.3
-      prefix: /opt/rocm-5.2.3/hip
+      modules: [rocm/5.2.3]
     - spec: hip@5.4.1
-      prefix: /opt/rocm-5.4.1/hip
+      modules: [rocm/5.4.1]
     - spec: hip@5.5.0
-      prefix: /opt/rocm-5.5.0/hip
+      modules: [rocm/5.5.0]
   hipblas:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
