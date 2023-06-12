@@ -29,19 +29,19 @@ packages::
     buildable: false
     externals:
     - spec: hsa@4.3.1
-      prefix: /opt/rocm-4.3.1/
+      modules: [rocm/4.3.1]
     - spec: hsa@4.5.2
-      prefix: /opt/rocm-4.5.2/
+      modules: [rocm/4.5.2]
     - spec: hsa@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: hsa@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: hsa@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: hsa@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: hsa@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   hip:
     version: [5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
@@ -61,37 +61,37 @@ packages::
     buildable: false
     externals:
     - spec: hipblas@4.3.1
-      prefix: /opt/rocm-4.3.1/
+      modules: [rocm/4.3.1]
     - spec: hipblas@4.5.2
-      prefix: /opt/rocm-4.5.2/
+      modules: [rocm/4.5.2]
     - spec: hipblas@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: hipblas@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: hipblas@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: hipblas@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: hipblas@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   hipsparse:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: hipsparse@4.3.1
-      prefix: /opt/rocm-4.3.1/
+      modules: [rocm/4.3.1]
     - spec: hipsparse@4.5.2
-      prefix: /opt/rocm-4.5.2/
+      modules: [rocm/4.5.2]
     - spec: hipsparse@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: hipsparse@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: hipsparse@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: hipsparse@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: hipsparse@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   llvm-amdgpu:
     version: [5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
@@ -111,96 +111,91 @@ packages::
     buildable: false
     externals:
     - spec: hsa-rocr-dev@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: hsa-rocr-dev@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: hsa-rocr-dev@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: hsa-rocr-dev@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: hsa-rocr-dev@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   rocminfo:
     version: [5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: rocminfo@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: rocminfo@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: rocminfo@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: rocminfo@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: rocminfo@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   rocm-device-libs:
     version: [5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: rocm-device-libs@5.0.2
-      prefix: /opt/rocm-5.0.2/
       modules: [rocm/5.0.2]
     - spec: rocm-device-libs@5.1.1
-      prefix: /opt/rocm-5.1.1/
       modules: [rocm/5.1.1]
     - spec: rocm-device-libs@5.2.3
-      prefix: /opt/rocm-5.2.3/
       modules: [rocm/5.2.3]
     - spec: rocm-device-libs@5.4.1
-      prefix: /opt/rocm-5.4.1/
       modules: [rocm/5.4.1]
     - spec: rocm-device-libs@5.5.0
-      prefix: /opt/rocm-5.5.0/
       modules: [rocm/5.5.0]
   rocrand:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: rocrand@4.3.1
-      prefix: /opt/rocm-4.3.1/
+      modules: [rocm/4.3.1]
     - spec: rocrand@4.5.2
-      prefix: /opt/rocm-4.5.2/
+      modules: [rocm/4.5.2]
     - spec: rocrand@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: rocrand@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: rocrand@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: rocrand@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: rocrand@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   rocprim:
     version: [5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: rocprim@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: rocprim@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: rocprim@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: rocprim@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   rocthrust:
     version: [4.3.1, 4.5.2, 5.0.2, 5.1.1, 5.2.3, 5.4.1, 5.5.0]
     buildable: false
     externals:
     - spec: rocthrust@4.3.1
-      prefix: /opt/rocm-4.3.1/
+      modules: [rocm/4.3.1]
     - spec: rocthrust@4.5.2
-      prefix: /opt/rocm-4.5.2/
+      modules: [rocm/4.5.2]
     - spec: rocthrust@5.0.2
-      prefix: /opt/rocm-5.0.2/
+      modules: [rocm/5.0.2]
     - spec: rocthrust@5.1.1
-      prefix: /opt/rocm-5.1.1/
+      modules: [rocm/5.1.1]
     - spec: rocthrust@5.2.3
-      prefix: /opt/rocm-5.2.3/
+      modules: [rocm/5.2.3]
     - spec: rocthrust@5.4.1
-      prefix: /opt/rocm-5.4.1/
+      modules: [rocm/5.4.1]
     - spec: rocthrust@5.5.0
-      prefix: /opt/rocm-5.5.0/
+      modules: [rocm/5.5.0]
   mvapich2:
     buildable: false
     externals:
