@@ -551,7 +551,7 @@ spack:
       - spec: papi@6.0.0.1
         prefix: /usr/tce/packages/papi/papi-6.0.0.1
     pkg-config:
-      buildabe: false
+      buildable: false
       version: [1.4.2]
       externals:
       - spec: pkg-config@1.4.2
