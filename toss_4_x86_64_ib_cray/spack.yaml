@@ -574,7 +574,7 @@ spack:
         prefix: /opt/cray/pe/papi/7.0.0.1
     gettext:
       buildable: false
-      version: [gettext@0.19.8.1]
+      version: [0.19.8.1]
       externals:
       - spec: gettext@0.19.8.1
         prefix: /usr
