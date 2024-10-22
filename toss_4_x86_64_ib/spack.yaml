@@ -569,3 +569,9 @@ spack:
       externals:
       - spec: pkg-config@1.4.2
         prefix: /usr
+    gettext:
+      buildable: false
+      version: [gettext@0.19.8.1]
+      externals:
+      - spec: gettext@0.19.8.1
+        prefix: /usr
