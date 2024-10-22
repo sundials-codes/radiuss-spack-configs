@@ -16,7 +16,7 @@ from .blt import llnl_link_helpers
 class RajaPerf(CachedCMakePackage, CudaPackage, ROCmPackage):
     """RAJA Performance Suite."""
 
-    homepage = "http://software.llnl.gov/RAJAPerf/"
+    homepage = "https://github.com/LLNL/RAJAPerf"
     git = "https://github.com/LLNL/RAJAPerf.git"
     tags = ["radiuss"]
 
@@ -103,6 +103,7 @@ class RajaPerf(CachedCMakePackage, CudaPackage, ROCmPackage):
         description="Tests to run",
     )
     variant("caliper", default=False, description="Build with support for Caliper based profiling")
+    variant("lowopttest", default=False, description="Intended for developers to use low optimization level for tests to pass with some compilers.")
 
     depends_on("blt")
     depends_on("blt@0.6.2:", type="build", when="@2024.07.0:")
@@ -179,6 +180,9 @@ class RajaPerf(CachedCMakePackage, CudaPackage, ROCmPackage):
         compiler = self.compiler
         # Default entries are already defined in CachedCMakePackage, inherit them:
         entries = super().initconfig_compiler_entries()
+
+        if spec.satisfies("+lowopttest"):
+            entries.append(cmake_cache_string("CMAKE_CXX_FLAGS_RELEASE", "-O1"))
 
         # adrienbernede-23-01
         # Maybe we want to share this in the above llnl_link_helpers function.
@@ -325,7 +329,7 @@ class RajaPerf(CachedCMakePackage, CudaPackage, ROCmPackage):
         entries.append(cmake_cache_option("BUILD_SHARED_LIBS", "+shared" in spec))
         entries.append(cmake_cache_option("ENABLE_OPENMP", "+openmp" in spec))
         entries.append(cmake_cache_option("RAJA_ENABLE_OPENMP_TASK", "+omptask" in spec))
-        entries.append(cmake_cache_option("RAJA_ENABLE_SYCL", spec.satisfies("+sycl")))
+        entries.append(cmake_cache_option("ENABLE_SYCL", spec.satisfies("+sycl")))
 
         # C++17
         if spec.satisfies("@2024.07.0:") and spec.satisfies("+sycl"):
