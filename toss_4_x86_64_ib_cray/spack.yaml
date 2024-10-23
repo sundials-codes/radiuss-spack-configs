@@ -380,11 +380,11 @@ spack:
       - spec: hip@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/hip
       - spec: hip@6.1.1%rocmcc@6.1.1
-        prefix: /opt/rocm-6.1.1/hip
+        prefix: /opt/rocm-6.1.1/
       - spec: hip@6.1.2%rocmcc@6.1.2
-        prefix: /opt/rocm-6.1.2/hip
+        prefix: /opt/rocm-6.1.2/
       - spec: hip@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/hip
+        prefix: /opt/rocm-6.2.0/
     hipfft:
       version: [5.2.3, 5.3.0, 5.4.1, 5.4.3, 5.5.1, 5.6.1, 5.7.0, 5.7.1, 6.1.1, 6.1.2, 6.2.0]
       buildable: false
@@ -406,11 +406,11 @@ spack:
       - spec: hipfft@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/hipfft
       - spec: hipfft@6.1.1%rocmcc@6.1.1
-        prefix: /opt/rocm-6.1.1/hipfft
+        prefix: /opt/rocm-6.1.1/
       - spec: hipfft@6.1.2%rocmcc@6.1.2
-        prefix: /opt/rocm-6.1.2/hipfft
+        prefix: /opt/rocm-6.1.2/
       - spec: hipfft@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/hipfft
+        prefix: /opt/rocm-6.2.0/
     hipsparse:
       version: [5.7.1, 6.2.0]
       buildable: false
@@ -418,7 +418,7 @@ spack:
       - spec: hipsparse@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/hipsparse
       - spec: hipsparse@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/hipsparse
+        prefix: /opt/rocm-6.2.0/
     hipblas:
       version: [5.7.1, 6.2.0]
       buildable: false
@@ -426,7 +426,7 @@ spack:
       - spec: hipblas@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/hipblas
       - spec: hipblas@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/hipblas
+        prefix: /opt/rocm-6.2.0/
     rocsolver:
       version: [5.7.1, 6.2.0]
       buildable: false
@@ -434,7 +434,7 @@ spack:
       - spec: rocsolver@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/rocsolver
       - spec: rocsolvere@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/rocsolver
+        prefix: /opt/rocm-6.2.0/
     rocblas:
       version: [5.7.1, 6.2.0]
       buildable: false
@@ -442,7 +442,7 @@ spack:
       - spec: rocblas@5.7.1%rocmcc@5.7.1
         prefix: /opt/rocm-5.7.1/rocblas
       - spec: rocblas@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/rocblas
+        prefix: /opt/rocm-6.2.0/
     llvm-amdgpu:
       version: [5.2.3, 5.3.0, 5.4.1, 5.4.3, 5.5.1, 5.6.1, 5.7.0, 5.7.1, 6.1.1, 6.1.2, 6.2.0]
       buildable: false
