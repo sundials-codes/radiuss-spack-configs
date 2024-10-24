@@ -357,13 +357,6 @@ spack:
       externals:
       - spec: cuda@11.4.120
         prefix: /opt/toss/cudatoolkit/11.4/
-      version: [5.7.1, 6.2.0]
-      buildable: false
-      externals:
-      - spec: hipblas@5.7.1%rocmcc@5.7.1
-        prefix: /opt/rocm-5.7.1/hipblas
-      - spec: hipblas@6.2.0%rocmcc@6.2.0
-        prefix: /opt/rocm-6.2.0/
     llvm-amdgpu:
       version: [5.2.3, 5.3.0, 5.4.1, 5.4.3, 5.5.1, 5.6.1, 5.7.0, 5.7.1, 6.1.1, 6.1.2, 6.2.0]
       buildable: false
@@ -477,6 +470,13 @@ spack:
       - spec: hipsparse@6.2.0%rocmcc@6.2.0
         prefix: /opt/rocm-6.2.0/
     hipblas:
+      version: [5.7.1, 6.2.0]
+      buildable: false
+      externals:
+      - spec: hipblas@5.7.1%rocmcc@5.7.1
+        prefix: /opt/rocm-5.7.1/hipblas
+      - spec: hipblas@6.2.0%rocmcc@6.2.0
+        prefix: /opt/rocm-6.2.0/
     rocminfo:
       version: [5.2.3, 5.3.0, 5.4.1, 5.4.3, 5.5.1, 5.6.1, 5.7.0, 5.7.1, 6.1.1, 6.1.2, 6.2.0]
       buildable: false
