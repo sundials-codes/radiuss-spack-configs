@@ -330,8 +330,6 @@ spack:
 
   packages::
     all:
-      # This defaults us to machine specific flags of ivybridge which allows
-      # us to run on broadwell as well
       target: [zen2]
       compiler: [gcc, cce, clang]
       providers:
