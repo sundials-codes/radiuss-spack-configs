@@ -625,8 +625,14 @@ spack:
     cray-libsci:
       buildable: false
       externals:
-      - spec: cray-libsci@23.09.1.1
+      - spec: cray-libsci@24.07.0%cce@17.0.1
         prefix: /opt/cray/pe/libsci/23.09.1.1/CRAY/12.0/x86_64
+      - spec: cray-libsci@24.07.0%cce@18.0.0
+        prefix: /opt/cray/pe/libsci/24.07.0/CRAY/18.0/x86_64
+      - spec: cray-libsci@23.09.1.1%rocmcc@5.7.1
+        prefix: /opt/cray/pe/libsci/23.09.1.1/amd/5.0/x86_64/
+      - spec: cray-libsci@24.07.0%rocmcc@6.2.0
+        prefix: /opt/cray/pe/libsci/24.07.0/amd/6.0/x86_64/
     python:
       buildable: false
       version: [3.10.8]
